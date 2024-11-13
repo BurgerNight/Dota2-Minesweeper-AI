@@ -24,7 +24,7 @@ start_agent = False
 stop_agent = False
 pause_agent = False
 make_flag = False
-fast_agent = True
+fast_agent = False
 
 level_info = {
     1: ((9, 9), 10),
@@ -1009,7 +1009,7 @@ if __name__ == "__main__":
     print("'f': Toggle auto-flagging of mines (default off)")
     print("'p': Pause/Resume the program")
     print("'esc': Exit the program")
-    print("'t': Toggle turbo mode，Trade off between speed and accuracy. (default on)")
+    print("'t': Toggle turbo mode，Trade off between speed and accuracy. Turn on for higher score and off for program stability (default off)")
 
     listener = Listener(on_press=on_press)
     listener.start()
